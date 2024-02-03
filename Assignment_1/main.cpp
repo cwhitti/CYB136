@@ -1,21 +1,21 @@
 #include <iostream> // page 15
-#include <math.h>
 using namespace std; // page 21
 
 int convert_to_base_10( char base2str[256] );
 int get_str_len( char string[256] );
 int to_power(int base, int exponent);
 
-// base 10 to binary converter
+/*
+Name: Claire Whittington
+Class: CYB136
+Task: Assignment #1
+
+This program works as a binary to decimal converter. It has the option to
+choose a left LSD or a right LSD for input.
+*/
+
 int main()
 {
-  /*
-  cout << "Hello, World!\n"; // page 15
-
-  const type_name constant_name = initial_value; // page 53
-
-  */
-
   // declare variables
     // Was instructed by TAs to not use <string.h> package
   char base2str[256], tempStr[256];
@@ -23,16 +23,14 @@ int main()
   int choice = -1;
 
   // introduction
-  cout << "\n";
-  cout << "Name: Claire Whittington\n";
-  cout << "Class: CYB136\n";
-  cout << "Task: Assignment #1\n\n";
-  cout << "Welcome to the Binary to Base 10 converter\n";
+  cout << "\nWelcome to the Binary to Base 10 converter\n";
 
   // show rules
   cout << "\n\tRules\n";
-  cout << "- Please enter only positive values\n";
+  cout << "- Enter only positive values\n";
+  cout << "- No decimal calculation\n";
 
+  // show modes
   cout<< "\n\tModes\n";
   cout << "[1] Left LSD  (100 = 1)\n";
   cout << "[2] Right LSD (100 = 4)\n";
@@ -120,7 +118,7 @@ int get_str_len( char string[256] )
   // initialize variables
   int len = 0;
 
-  // loop thro string
+  // loop thru string
   while (string[len] != '\0')
   {
     len++;
