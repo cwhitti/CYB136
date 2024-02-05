@@ -21,6 +21,7 @@ int main()
   char base2str[256], tempStr[256];
   int base10, strLen, index;
   int choice = -1;
+  bool validInput = false;
 
   // introduction
   cout << "\nWelcome to the Binary to Base 10 converter\n";
@@ -35,10 +36,26 @@ int main()
   cout << "[1] Left LSD  (100 = 1)\n";
   cout << "[2] Right LSD (100 = 4)\n";
 
-  while ( choice != 1 && choice != 2) // page 121
+  while ( !validInput ) // page 121
   {
     cout << "\nPlease pick your mode: ";
-    cin >> choice; // page 41
+
+    if (cin >> choice) // check if its valid input
+    {
+      if (choice == 1 || choice == 2)
+      {
+        validInput = true;
+      }
+
+    }
+
+    // illegal casting
+    else
+    {
+      cout << "Invalid input. Please enter a numeric value.\n";
+    }
+    cin.clear();
+    cin.ignore(256, '\n');
   }
   // get input
   cout << "\nPlease enter binary number: ";
@@ -138,7 +155,7 @@ int to_power(int base, int exponent)
   // raise to power
   for (index = 0; index < exponent; index++)
   {
-    sum = sum + base;
+    sum = sum * base;
   }
 
   // return to function
