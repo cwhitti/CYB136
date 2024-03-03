@@ -60,16 +60,19 @@ class Employee
 // Prototypes
 void bubbleSort(vector<Employee>& vec);
 
+void createNameStr( Employee emp, string &outstr );
 stack<Employee> createStack();
 queue<Employee> createQueue();
 
 void displayMenu();
-void displayQueue( queue<Employee> );
-void displayStack( stack<Employee> );
+//void displayQueue( queue<Employee> );
+//void displayStack( stack<Employee> );
 void displayVector( vector<Employee> empVect );
 
+//void insertionSort(vector<Employee> &vec);
+
 void printEndline();
-void printEmployeeString( Employee emp, int index );
+void printEmployeeString( Employee emp, string beg );
 void printInteger( int num );
 void printString( string str );
 
@@ -77,10 +80,10 @@ int promptForInteger( string prompt );
 string promptForString( string prompt );
 
 void pushToStack( stack<Employee> &stack, Employee emp );
+void removeFromStack( stack<Employee> &stack );
 
 int main()
 {
-  /
   // initialize variables
   vector<Employee> empVect;
   stack<Employee> stack = createStack();
@@ -105,6 +108,7 @@ int main()
   Employee emp15  = Employee("Carolyn", "Whitaker", "MysticMoon789", 3);
 
 
+  printString("\n\n ===== Beginning Vector Operations =====\n\n");
   // add employee
   empVect.push_back( emp1 );
   empVect.push_back( emp2 );
@@ -122,57 +126,67 @@ int main()
   empVect.push_back( emp14 );
   empVect.push_back( emp15 );
 
-  // sort employees by admin level
-  printString("\nDisplaying Employee Vector: Unsorted\n");
+  // VECTOR OPERATONS
+  printString("\nDisplaying Employee Vector: Unsorted\n\n");
   displayVector(empVect);
 
+  printString("\n\n ===== Sorting by Bubble Sort =====\n\n");
   bubbleSort(empVect);
 
-  printString("\n\nDisplaying Employee Vector: Bubble Sorted by Surname\n");
+  printString("\n\nDisplaying Employee Vector: Bubble Sorted by Surname\n\n");
   displayVector(empVect);
 
   // STACK OPERATIONS
-  printString("\n\nBeginning Stack Operations\n");
+  printString("\n\n ===== Beginning Stack Operations =====\n\n");
+
+    printString("\n\nPushing employees to stack:\n\n");
 
     // add employees to stack
-    for ( index = 0; index < )
+    for ( index = 0; index < empVect.size(); index++ )
+    {
+      printEmployeeString( empVect[ index ], "\tPushing Employee: " );
+      pushToStack( stack, empVect[ index ] );
+    }
 
-    // print STACK
+    printString("\n\nRemoving employees from stack:\n\n");
 
-    // remove 2 employees
+    for ( index = 0; index < 4; index++ )
+    {
+      printEmployeeString( stack.top(), "\tRemoving Employee: " );
+      removeFromStack( stack );
+    }
 
-    // print stack
+    printString("\n\nPushing employees to stack:\n\n");
 
-    // add two new employees
+    for ( index = 0; index < 1; index++ )
+    {
+      printEmployeeString( empVect[ index ], "\tPushing Employee: " );
+      pushToStack( stack, empVect[ index ] );
+    }
 
-  // sort employees by name, print using QUEUE
+    printString("\n\nRemoving all employees from stack:\n\n");
+
+    for ( index = 0; index < stack.size(); index++ )
+    {
+      printEmployeeString( stack.top(), "\tRemoving Employee: " );
+      removeFromStack( stack );
+    }
+
+  printString("\n\n ===== Sorting by Insertion Sort =====\n\n");
+
+  // Sort employees by insertion sort
+  //insertionSort( empVect );
 
   // get priority Queue
-
-  // display employees
+  printString("\n\nDisplaying Employee Vector: Interstion Sorted by Admin Level\n\n");
+  displayVector(empVect);
 
   return 0;
-}
-
-
-// Function to create a stack of Employee objects
-stack<Employee> createStack()
-{
-  stack<Employee> newStack;
-  return newStack;
-}
-
-// Function to create a queue of Employee objects
-queue<Employee> createQueue()
-{
-  queue<Employee> newQueue;
-  return newQueue;
 }
 
 // Bubble Sort function for sorting Employee objects by surname
 void bubbleSort(vector<Employee>& vec)
 {
-
   int size = vec.size();
   int outerIndex, innerIndex;
 
@@ -190,23 +204,41 @@ void bubbleSort(vector<Employee>& vec)
   }
 }
 
-void displayQueue( queue<Employee> )
+void createNameStr( Employee emp, string &outstr )
 {
+  string name = emp.name;
+  string surname = emp.surname;
+  string password = emp.pass;
+  string adminLevel = to_string(emp.adminLevel);
 
+  outstr = outstr + "NAME: " + surname + ", " + name
+         + " | PASSWORD: " + password
+         + " | ADMIN LEVEL: " + adminLevel;
 }
 
-void displayStack( stack<Employee> )
+// Function to create a stack of Employee objects
+stack<Employee> createStack()
 {
+  stack<Employee> newStack;
+  return newStack;
+}
 
+// Function to create a queue of Employee objects
+queue<Employee> createQueue()
+{
+  queue<Employee> newQueue;
+  return newQueue;
 }
 
 void displayVector( vector<Employee> empVect )
 {
   int index;
+  string beg;
 
   for ( index = 0; index < empVect.size(); index++ )
   {
-    printEmployeeString( empVect[ index ], index );
+    beg = "\t" + to_string(index + 1) + ") ";
+    printEmployeeString( empVect[ index ], beg );
   }
   printEndline();
 }
@@ -218,25 +250,37 @@ void displayMenu()
   printString("2) Display Employees\n");
 }
 
-void printEmployeeString( Employee emp, int index )
+/*
+void insertionSort(vector<Employee> &vec)
 {
-  string name = emp.name;
-  string surname = emp.surname;
-  string pass = emp.pass;
-  int level = emp.adminLevel;
+  int n = vec.size();
+  Employee key;
+  int i, j;
+
+  for (i = 1; i < n; i++)
+  {
+    key = vec[i];
+    j = i - 1;
+
+    while (j >= 0 && vec[j].adminLevel > key.adminLevel)
+    {
+      vec[j + 1] = vec[j];
+      j = j - 1;
+    }
+    vec[j + 1] = key;
+  }
+}
+
+*/
+void printEmployeeString( Employee emp, string beg )
+{
+  string outstr = beg;
+
+  createNameStr( emp, outstr );
+
+  printString( outstr );
 
   printEndline();
-  printString("\t");
-  printInteger(index + 1);
-  printString( ") NAME: " );
-  printString( surname );
-  printString( ", " );
-  printString( name );
-  printString( " | PASSWORD: " );
-  printString( pass );
-  printString( " | ADMIN LEVEL: " );
-  printInteger( level );
-
 }
 
 int promptForInteger( string prompt )
@@ -275,5 +319,10 @@ void printInteger( int num )
 
 void pushToStack( stack<Employee> &stack, Employee emp )
 {
-  stack.push( emp )
+  stack.push( emp );
+}
+
+void removeFromStack( stack<Employee> &stack )
+{
+  stack.pop( );
 }
