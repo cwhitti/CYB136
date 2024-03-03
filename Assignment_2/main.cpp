@@ -57,19 +57,28 @@ class Employee
     }
 };
 
+struct compare
+{
+    bool operator()(Employee a, Employee b)
+    {
+        return a.adminLevel > b.adminLevel;
+    }
+};
+
+// priority_queue<Employee, vector<Employee>, compare> queue:
+
 // Prototypes
 void bubbleSort(vector<Employee>& vec);
 
 void createNameStr( Employee emp, string &outstr );
+priority_queue<Employee, vector<Employee>, compare> createPriorityQueue();
 stack<Employee> createStack();
 queue<Employee> createQueue();
 
 void displayMenu();
-//void displayQueue( queue<Employee> );
-//void displayStack( stack<Employee> );
 void displayVector( vector<Employee> empVect );
 
-//void insertionSort(vector<Employee> &vec);
+void insertionSort( vector<Employee>& employees );
 
 void printEndline();
 void printEmployeeString( Employee emp, string beg );
@@ -79,7 +88,12 @@ void printString( string str );
 int promptForInteger( string prompt );
 string promptForString( string prompt );
 
+void pushToPriorityQueue( priority_queue<Employee, vector<Employee>, compare> &queue, Employee emp );
+void pushToQueue( queue<Employee> &queue, Employee emp );
 void pushToStack( stack<Employee> &stack, Employee emp );
+
+void removeFromPriorityQueue( priority_queue<Employee, vector<Employee>, compare> &queue);
+void removeFromQueue( queue<Employee> &queue );
 void removeFromStack( stack<Employee> &stack );
 
 int main()
@@ -88,28 +102,29 @@ int main()
   vector<Employee> empVect;
   stack<Employee> stack = createStack();
   queue<Employee> queue = createQueue();
+  priority_queue<Employee, vector<Employee>, compare> pQueue;
 
   int index;
 
   Employee emp1  = Employee("Emily", "Skinner", "SwiftCat573", 1);
-  Employee emp2 = Employee("Guillermo", "Maynard", "CrimsonRiver224", 3);
-  Employee emp3  = Employee("Frederic", "Hart", "VelvetRose654", 2);
-  Employee emp4  = Employee("Doyle", "Simon", "CelestialSky456", 3);
-  Employee emp5  = Employee("Nikki", "Riley", "SparklingOcean1234", 4);
-  Employee emp6  = Employee("Herman", "Richard", "GentleBreeze3210", 3);
-  Employee emp7  = Employee("Edwina", "Calhoun", "LivelyBrook0987", 1);
-  Employee emp8  = Employee("Bettie", "Sanchez", "SwiftEagle6543", 3);
-  Employee emp9  = Employee("Aimee", "Vaughn", "CautiousLion8765", 4);
-  Employee emp10  = Employee("Marcel", "Barnes", "TranquilCanyon6789", 4);
-  Employee emp11  = Employee("Gwen", "Chase", "CuriousCat123", 2);
+  Employee emp2 = Employee("Guillermo", "Maynard", "CrimsonRiver224", 2);
+  Employee emp3  = Employee("Frederic", "Hart", "VelvetRose654", 3);
+  Employee emp4  = Employee("Doyle", "Simon", "CelestialSky456", 4);
+  Employee emp5  = Employee("Nikki", "Riley", "SparklingOcean1234", 5);
+  Employee emp6  = Employee("Herman", "Richard", "GentleBreeze3210", 6);
+  Employee emp7  = Employee("Edwina", "Calhoun", "LivelyBrook0987", 2);
+  Employee emp8  = Employee("Bettie", "Sanchez", "SwiftEagle6543", 7);
+  Employee emp9  = Employee("Aimee", "Vaughn", "CautiousLion8765", 8);
+  Employee emp10  = Employee("Marcel", "Barnes", "TranquilCanyon6789", 3);
+  Employee emp11  = Employee("Gwen", "Chase", "CuriousCat123", 8);
   Employee emp12  = Employee("Mac", "Williamson", "LuckyClover567", 4);
-  Employee emp13  = Employee("Stephen", "Austin", "WiseOwl789", 3);
-  Employee emp14  = Employee("Brianna", "Cooley", "FancyFlower123", 3);
-  Employee emp15  = Employee("Carolyn", "Whitaker", "MysticMoon789", 3);
-
+  Employee emp13  = Employee("Stephen", "Austin", "WiseOwl789", 2);
+  Employee emp14  = Employee("Brianna", "Cooley", "FancyFlower123", 8);
+  Employee emp15  = Employee("Carolyn", "Whitaker", "MysticMoon789", 2);
 
   printString("\n\n ===== Beginning Vector Operations =====\n\n");
-  // add employee
+
+  // add employees
   empVect.push_back( emp1 );
   empVect.push_back( emp2 );
   empVect.push_back( emp3 );
@@ -139,18 +154,18 @@ int main()
   // STACK OPERATIONS
   printString("\n\n ===== Beginning Stack Operations =====\n\n");
 
-    printString("\n\nPushing employees to stack:\n\n");
+  printString("\n\nPushing employees to stack:\n\n");
 
-    // add employees to stack
-    for ( index = 0; index < empVect.size(); index++ )
-    {
+  // add employees to stack
+  for ( index = 0; index < empVect.size(); index++ )
+  {
       printEmployeeString( empVect[ index ], "\tPushing Employee: " );
       pushToStack( stack, empVect[ index ] );
-    }
+  }
 
-    printString("\n\nRemoving employees from stack:\n\n");
+    printString("\n\nRemoving a few employess from stack:\n\n");
 
-    for ( index = 0; index < 4; index++ )
+    for ( index = 0; index < 8; index++ )
     {
       printEmployeeString( stack.top(), "\tRemoving Employee: " );
       removeFromStack( stack );
@@ -158,7 +173,7 @@ int main()
 
     printString("\n\nPushing employees to stack:\n\n");
 
-    for ( index = 0; index < 1; index++ )
+    for ( index = 0; index < 3; index++ )
     {
       printEmployeeString( empVect[ index ], "\tPushing Employee: " );
       pushToStack( stack, empVect[ index ] );
@@ -166,8 +181,7 @@ int main()
 
     printString("\n\nRemoving all employees from stack:\n\n");
 
-    for ( index = 0; index < stack.size(); index++ )
-    {
+    while (!stack.empty()) {
       printEmployeeString( stack.top(), "\tRemoving Employee: " );
       removeFromStack( stack );
     }
@@ -175,12 +189,80 @@ int main()
   printString("\n\n ===== Sorting by Insertion Sort =====\n\n");
 
   // Sort employees by insertion sort
-  //insertionSort( empVect );
+  insertionSort( empVect );
 
   // get priority Queue
   printString("\n\nDisplaying Employee Vector: Interstion Sorted by Admin Level\n\n");
   displayVector(empVect);
 
+  printString("\n\n ===== Beginning Normal Queue Operations =====\n\n");
+
+    printString("\n\nPushing employees to Queue:\n\n");
+
+      // add employees to stack
+      for ( index = 0; index < empVect.size(); index++ )
+      {
+        printEmployeeString( empVect[ index ], "\tPushing Employee: " );
+        pushToQueue( queue, empVect[ index ] );
+      }
+
+      printString("\n\nRemoving a few employess from queue:\n\n");
+
+      for ( index = 0; index < 8; index++ )
+      {
+        printEmployeeString( queue.front(), "\tRemoving Employee: " );
+        removeFromQueue( queue );
+      }
+
+      printString("\n\nPushing employees to queue:\n\n");
+
+      for ( index = 0; index < 3; index++ )
+      {
+        printEmployeeString( empVect[ index ], "\tPushing Employee: " );
+        pushToQueue( queue, empVect[ index ] );
+      }
+
+      printString("\n\nRemoving all employees from queue:\n\n");
+
+      while (!queue.empty()) {
+        printEmployeeString( queue.front(), "\tRemoving Employee: " );
+        removeFromQueue( queue );
+      }
+
+  printString("\n\n ===== Beginning Priority Queue Operations =====\n\n");
+
+    printString("\n\nPushing employees to Priority Queue:\n\n");
+
+    // add employees to stack
+      for ( index = 0; index < empVect.size(); index++ )
+      {
+        printEmployeeString( empVect[ index ], "\tPushing Employee: " );
+        pushToPriorityQueue( pQueue, empVect[ index ] );
+      }
+
+      printString("\n\nRemoving a few employess from Priority queue:\n\n");
+
+      for ( index = 0; index < 8; index++ )
+      {
+        printEmployeeString( pQueue.top(), "\tRemoving Employee: " );
+        removeFromPriorityQueue( pQueue );
+      }
+
+      printString("\n\nPushing employees to Priority queue:\n\n");
+
+      for ( index = 0; index < 3; index++ )
+      {
+        printEmployeeString( empVect[ index ], "\tPushing Employee: " );
+        pushToPriorityQueue( pQueue, empVect[ index ] );
+      }
+
+      printString("\n\nRemoving all employees from Priority queue:\n\n");
+
+      while ( !pQueue.empty() )
+      {
+        printEmployeeString( pQueue.top(), "\tRemoving Employee: " );
+        removeFromPriorityQueue( pQueue );
+      }
   return 0;
 }
 
@@ -250,28 +332,24 @@ void displayMenu()
   printString("2) Display Employees\n");
 }
 
-/*
-void insertionSort(vector<Employee> &vec)
+void insertionSort(vector<Employee>& employees)
 {
-  int n = vec.size();
-  Employee key;
-  int i, j;
-
-  for (i = 1; i < n; i++)
+  int n = employees.size();
+  for (int i = 1; i < n; ++i)
   {
-    key = vec[i];
-    j = i - 1;
+    Employee key = employees[i];
+    int j = i - 1;
 
-    while (j >= 0 && vec[j].adminLevel > key.adminLevel)
+    // Move elements of employees[0..i-1], that are greater than key.adminLevel, to one position ahead of their current position
+    while (j >= 0 && employees[j].adminLevel < key.adminLevel)
     {
-      vec[j + 1] = vec[j];
+      employees[j + 1] = employees[j];
       j = j - 1;
     }
-    vec[j + 1] = key;
+    employees[j + 1] = key;
   }
-}
+  }
 
-*/
 void printEmployeeString( Employee emp, string beg )
 {
   string outstr = beg;
@@ -317,9 +395,28 @@ void printInteger( int num )
   cout << num;
 }
 
+void pushToPriorityQueue( priority_queue<Employee, vector<Employee>, compare> &queue, Employee emp )
+{
+  queue.push( emp );
+}
+
+void pushToQueue( queue<Employee> &queue, Employee emp )
+{
+  queue.push( emp );
+}
+
 void pushToStack( stack<Employee> &stack, Employee emp )
 {
   stack.push( emp );
+}
+
+void removeFromPriorityQueue( priority_queue<Employee, vector<Employee>, compare> &queue )
+{
+  queue.pop( );
+}
+void removeFromQueue( queue<Employee> &queue)
+{
+  queue.pop( );
 }
 
 void removeFromStack( stack<Employee> &stack )
