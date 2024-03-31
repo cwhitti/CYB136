@@ -9,7 +9,7 @@ using namespace std;
 class BST;
 
 // header declarations
-void processFileIntoBST(ifstream& file, BST studentBST);
+void processFileIntoBST(ifstream& file, BST& studentBST);
 
 // declare BST class
 class BST
@@ -51,24 +51,24 @@ private:
   }
 
   // format a str
-  string formatStudentStr( StudentNode const* student, int index )
+  string formatStudentStr( StudentNode const* student )
   {
-    string str = to_string(index) + ") " + to_string(student->grade) + " - " +
-                                    student->lastName + ", " +
-                                    student->firstName + '\n';
+    string str = to_string(student->grade) + " - " +
+                  student->lastName + ", " + student->firstName + '\n';
+
     return str;
   }
 
   // initialize a node
   void initializeNodeFromData( string lastName, string firstName, int grade,
-                                                            StudentNode student)
+                                                            StudentNode* student)
   {
-    student.lastName = lastName;
-    student.firstName = firstName;
-    student.grade = grade;
+    student->lastName = lastName;
+    student->firstName = firstName;
+    student->grade = grade;
 
-    student.leftChild = NULL;
-    student.rightChild = NULL;
+    student->leftChild = NULL;
+    student->rightChild = NULL;
   }
 
   // insert
@@ -84,11 +84,10 @@ private:
       // create new instance of studentNode
       newNode = new StudentNode;
 
-      initializeNodeFromData(lastName, firstName, grade, *newNode);
+      initializeNodeFromData(lastName, firstName, grade, newNode);
 
       return newNode;
     }
-
     // Data found, go left if new grade <= current grade
     else if ( grade <= node -> grade )
     {
@@ -101,47 +100,82 @@ private:
     {
       node->rightChild = insert(lastName, firstName, grade, node->rightChild);
     }
-
     // return Node
     return node;
   }
 
   // DINO
-  void privateDisplayInOrder( StudentNode* BSTRoot, int index )
-  {
-
-  }
-
-  // DPOSTO
-  void privateDisplayPostOrder( StudentNode* BSTRoot, int index )
-  {
-
-
-  }
-
-  // DPREO
-  void privateDisplayPreOrder( StudentNode* BSTRoot, int index )
+  void privateDisplayInOrder( StudentNode* BSTRoot, int* index )
   {
     string studentStr;
 
     if ( BSTRoot != NULL )
     {
-      // increment index
-      index = index + 1;
+      // go left
+      privateDisplayInOrder( BSTRoot->leftChild, index );
+
+      // format current node
+      studentStr = formatStudentStr( BSTRoot );
+
+      // increase item number
+      (*index)++;
+
+      // print current node
+      cout << to_string(*index) + ") " + studentStr;
+
+      // go right
+      privateDisplayInOrder( BSTRoot->rightChild, index );
+
+    }
+  }
+
+  // DPOSTO
+  void privateDisplayPostOrder( StudentNode* BSTRoot, int* index )
+  {
+    string studentStr;
+
+    if ( BSTRoot != NULL )
+    {
+
+      // go left
+      privateDisplayPostOrder( BSTRoot->leftChild, index );
+
+      // go right
+      privateDisplayPostOrder( BSTRoot->rightChild, index );
+
+      // increase item number
+      (*index)++;
+
+      // format current node
+      studentStr = formatStudentStr( BSTRoot );
+
+      // print current node
+      cout << to_string(*index) + ") " + studentStr;
+    }
+  }
+
+  // DPREO
+  void privateDisplayPreOrder( StudentNode* BSTRoot, int* index )
+  {
+    string studentStr;
+
+    if ( BSTRoot != NULL )
+    {
+      // increase item number
+      (*index)++;
+
+      // format current node
+      studentStr = formatStudentStr( BSTRoot );
+
+      // print current node
+      cout << to_string(*index) + ") " + studentStr;
 
       // go left
       privateDisplayPreOrder( BSTRoot->leftChild, index );
 
-      // format current node
-      studentStr = formatStudentStr( BSTRoot, index );
-
-      // print current node
-      cout << studentStr;
-
       // go right
-      privateDisplayPreOrder( BSTRoot->leftChild, index );
+      privateDisplayPreOrder( BSTRoot->rightChild, index );
     }
-
   }
 
 public:
@@ -159,28 +193,32 @@ public:
   // insert into BST
   void insert( string lastName, string firstName, int grade )
   {
-    BSTRoot = insert( lastName, firstName, grade, BSTRoot);
+    BSTRoot = insert( lastName, firstName, grade, BSTRoot );
   }
 
   // display BST in order
   void displayInOrder()
   {
     int index = 0;
-    privateDisplayInOrder( BSTRoot, index );
+    privateDisplayInOrder( BSTRoot, &index );
   }
 
   // display BST postorder
   void displayPostOrder()
   {
     int index = 0;
-    privateDisplayPostOrder( BSTRoot, index );
+    privateDisplayPostOrder( BSTRoot, &index );
   }
 
   // display BST preorder
   void displayPreOrder()
   {
     int index = 0;
-    privateDisplayPreOrder( BSTRoot, index );
+
+    if (BSTRoot != NULL)
+    {
+      privateDisplayPreOrder( BSTRoot, &index );
+    }
   }
 };
 
@@ -201,18 +239,22 @@ int main(int argc, char const *argv[])
       processFileIntoBST(file, studentBST);
 
       // Pre-order
-      studentBST.displayPreOrder();
+      studentBST.displayInOrder();
   }
 
   return 0;
 }
 
-void processFileIntoBST(ifstream& file, BST studentBST)
+void processFileIntoBST(ifstream& file, BST& studentBST)
 {
   // declare variables
   string line, lastName, firstName, gradeStr;
   int grade;
 
+  // skip header
+  getline(file, line);
+
+  // process file lines
   while (getline(file, line))
   {
     // convert yo stringstream obj
