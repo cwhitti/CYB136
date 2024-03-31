@@ -188,7 +188,7 @@ int main()
 
     if (moveOn)
     {
-      moveOn = false;
+      // moveOn = false;
 
       displayMenu2();
 
@@ -305,15 +305,15 @@ int main()
             for ( index = 0; index < 3; index++ )
             {
               printEmployeeString( empVect[ index ], "\tPushing Employee: " );
-              pushToPriorityQueue( pQueue, empVect[ index ] );
+              pushToQueue( queue, empVect[ index ] );
             }
 
             printString("\n\nRemoving all employees from Priority queue:\n\n");
 
-            while ( !pQueue.empty() )
+            while ( !queue.empty() )
             {
-              printEmployeeString( pQueue.top(), "\tRemoving Employee: " );
-              removeFromPriorityQueue( pQueue );
+              printEmployeeString( pQueue.top(), "\tRemoving all Employees from Priority Queue: " );
+              removeFromQueue( queue );
             }
 
         printString("\n\n ===== Ending Priority Queue Operations =====\n\n");
