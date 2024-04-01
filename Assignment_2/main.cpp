@@ -462,6 +462,7 @@ void printEndline()
 {
   cout << "\n";
 }
+
 void printString( string str )
 {
   cout << str;

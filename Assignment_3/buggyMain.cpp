@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include <fstream>
 #include <string>
 #include <sstream>
@@ -69,13 +70,14 @@ private:
     str = strGrade + " - " +
                  student->lastName + ", " + student->firstName + '\n';
 
-    // return the str
+    // return it
     return str;
+
   }
 
   // initialize a node
   void initializeNodeFromData( string lastName, string firstName, float grade,
-                                                          StudentNode* student)
+                                                            StudentNode* student)
   {
     student->lastName = lastName;
     student->firstName = firstName;
@@ -127,7 +129,6 @@ private:
     // set precision
     cout.precision(2);
 
-    // check if root is null
     if ( BSTRoot != NULL )
     {
       // go left
@@ -161,7 +162,6 @@ private:
   {
     string studentStr;
 
-    // check if root is null
     if ( BSTRoot != NULL )
     {
       // go left
@@ -195,10 +195,8 @@ private:
   // DPREO
   void privateDisplayPreOrder( StudentNode* BSTRoot, int* index )
   {
-    // declare variables
     string studentStr;
 
-    // check if root is null
     if ( BSTRoot != NULL )
     {
       // increase item number
@@ -233,24 +231,19 @@ private:
     }
   }
 
-
-  void searchForStudent( string lastName, string firstName,
+  StudentNode* searchForStudent( string lastName, string firstName,
                                                         StudentNode* BSTRoot)
   {
-    // declare variables
     StudentNode* foundNode = NULL;
     string str;
 
-    // check if root is NULL
     if (BSTRoot != NULL)
     {
       // find find node
       foundNode = search( lastName, firstName, BSTRoot );
 
-      // was the node found?
       if ( foundNode != NULL )
       {
-        // yes, display node data
         printString("(!) Student Record Found: ");
 
         str = formatStudentStr(foundNode );
@@ -258,12 +251,12 @@ private:
         printString( str );
       }
 
-      // Node was not found
       else
       {
         printString("(!) Student Not Found.\n");
       }
     }
+    return foundNode;
   }
 
   StudentNode* search(string lastName, string firstName, StudentNode* node)
@@ -280,7 +273,7 @@ private:
       return node;
     }
 
-    // search in the left subtree
+    // Recursively search in the left subtree
     StudentNode *foundNode = search(lastName, firstName, node->leftChild);
 
      // Found in the left subtree
@@ -349,7 +342,7 @@ public:
   void searchForStudent( string lastName, string firstName )
   {
     cout << "\n---- Searching for Student ----\n\n";
-    searchForStudent( lastName, firstName, BSTRoot );
+    BSTRoot = searchForStudent( lastName, firstName, BSTRoot );
   }
 };
 
@@ -373,90 +366,81 @@ int main(int argc, char const *argv[])
     // Open the file
     file.open(fileName);
 
-    // Check if file is opened, initializing BST
-    if ( file.is_open() )
-    {
+    // BUG! MUST CHECK IF FILE IS OPEN
+
       // Process file
-      processFileIntoBST( file, studentBST );
+    processFileIntoBST( file, studentBST );
 
-      // file not needed now
-      file.close();
+    // file not needed now
+    file.close();
 
-      // display what was created
-      studentBST.displayInOrder();
+    // display what was created
+    studentBST.displayInOrder();
 
-      // begin the user input
-      while ( run )
-      {
-        // Show menu
-        printString("\n---- Menu Choices ----\n");
-        displayMenu();
-
-          // get input
-        input = promptForString("Program Choice: ");
-
-        // Option 1
-        if ( input == "1")
-        {
-          // display string
-          printString("\n---- Add New Student---- \n");
-
-          // prompt for info
-          lastName = promptForString("Last Name: ");
-          firstName = promptForString("First Name: ");
-          gradeStr = promptForString("Grade: ");
-
-          // cast grade to int
-          grade = stof( gradeStr );
-
-          // insert new student
-          studentBST.insert( lastName, firstName, grade );
-        }
-
-        // Option 2
-        else if ( input == "2")
-        {
-          // display string
-          printString("\n---- Searching Existing Student---- \n");
-
-          // prompt for info
-          lastName = promptForString("Last Name: ");
-          firstName = promptForString("First Name: ");
-
-          // search for student
-          studentBST.searchForStudent( lastName, firstName );
-        }
-
-        // Option 3
-        else if ( input == "3")
-        {
-          studentBST.displayInOrder();
-        }
-
-        // Option 4
-        else if ( input == "4" )
-        {
-          run = false;
-        }
-
-        // No valid input
-        else
-        {
-          // display string
-          printString("\nInvalid input, please try again\n");
-        } // Check for menu input
-      } // End while loop
-    } // Check if file opened
-
-    // File doesnt exist
-    else
+    // begin the user input
+    while ( run )
     {
-      printString("File not found: " + fileName + "\n");
-    }
+      // Show menu
+      printString("\n---- Menu Choices ----\n");
+      displayMenu();
 
+        // get input
+      input = promptForString("Program Choice: ");
+
+      // Option 1
+      if ( input == "1")
+      {
+        // display string
+        printString("\n---- Add New Student---- \n");
+
+        // prompt for info
+        lastName = promptForString("Last Name: ");
+        firstName = promptForString("First Name: ");
+        gradeStr = promptForString("Grade: ");
+
+        // cast grade to int
+        grade = stof( gradeStr );
+
+        // insert new student
+        studentBST.insert( lastName, firstName, grade );
+      }
+
+      // Option 2
+      else if ( input == "2")
+      {
+        // display string
+        printString("\n---- Searching Existing Student---- \n");
+
+        // prompt for info
+        lastName = promptForString("Last Name: ");
+        firstName = promptForString("First Name: ");
+
+        // search for student
+        studentBST.searchForStudent( lastName, firstName );
+      }
+
+      // Option 3
+      else if ( input == "3")
+      {
+        studentBST.displayInOrder();
+      }
+
+      // Option 4
+      else if ( input == "4" )
+      {
+        run = false;
+      }
+
+      // No valid input
+      else
+      {
+        // display string
+        printString("\nInvalid input, please try again\n");
+      } // Check for menu input
+    } // End while loop
   } // Check if >= 2 args provided
 
-  // Bad file input, file not supplied
+  // Bad file input, does not exist or not supplied
   else
   {
     printString("File not supplied in command arguments\n");
