@@ -233,6 +233,136 @@ private:
     }
   }
 
+<<<<<<< Updated upstream
+=======
+  StudentNode *removeFromMin( StudentNode *parentPtr, StudentNode *childPtr )
+  {
+   // check if another layer of recursion is needed
+   if ( childPtr -> leftChild != NULL )
+   {
+    // recursively searches for min node
+    return removeFromMin( childPtr, childPtr -> leftChild );
+   }
+
+   // no more recursion is needed
+
+   // Update the parent's leftChildPtr to unlink the min node
+   parentPtr -> leftChild = childPtr -> rightChild;
+
+   // return child pointer
+   return childPtr;
+  }
+
+  bool removeItem( string firstName, string lastName, StudentNode *BSTRoot )
+  {
+    // searches for item
+    StudentNode *foundData = search( lastName, firstName, BSTRoot );
+
+
+
+    // ensure data is found
+    if (foundData != NULL)
+    {
+     // if found, creates new node from search pointer,
+     // setStateNodeData( removedData, *foundData );
+
+     // then removes item from tree using helper function,
+      // function: StateDataType *wkgPtr, const StateDataType outData
+     BSTRoot = removeItemHelper( BSTRoot, foundData );
+
+     return true;
+    }
+    // otherwise returns NULL
+    return false;
+  }
+
+  StudentNode* removeItemHelper( StudentNode *wkgPtr, StudentNode *foundNode )
+  {
+   // declare variables
+   StudentNode *tempPtr;
+   float difference;
+
+   // compare state names
+    difference = foundNode -> grade - wkgPtr -> grade;
+
+   // check for moving left
+   if (difference < 0 )
+   {
+    // recurse left
+    wkgPtr->leftChild = removeItemHelper( wkgPtr->leftChild, foundNode );
+   }
+
+   // check for moving right
+   else if (difference > 0)
+   {
+    // recurse right
+    wkgPtr->rightChild = removeItemHelper( wkgPtr->rightChild, foundNode );
+   }
+
+   // we found the node to remove!!
+   else
+   {
+     // CASE: check for left child null
+     if ( wkgPtr->leftChild == NULL )
+     {
+      // set a temp ptr to wkgPtr
+      tempPtr = wkgPtr;
+
+      // set return ptr to right child
+      wkgPtr = wkgPtr -> rightChild;
+
+      // free temp ptr
+      delete ( tempPtr );
+     }
+
+     // otherwise, check for right child null
+     else if ( wkgPtr -> rightChild == NULL )
+     {
+      // set a temp ptr to wkg ptr
+      tempPtr = wkgPtr;
+
+      // set return ptr to left child
+      wkgPtr = wkgPtr -> leftChild;
+
+      // free temp ptr
+      delete ( tempPtr );
+     }
+
+     // check for right child has no left child
+     else if ( wkgPtr -> rightChild -> leftChild == NULL)
+     {
+      // copy data from right child into current node
+      // wkgPtr = wkgPtr -> rightChild;
+      setStudentNodeData( wkgPtr, *wkgPtr -> rightChild );
+
+      // set temp ptr to right child
+      tempPtr = wkgPtr -> rightChild;
+
+      // link around the right child
+      wkgPtr -> rightChild = tempPtr -> rightChild;
+
+      // free the right child node
+      delete ( tempPtr );
+     }
+
+     // assume right child has left child
+     else
+     {
+       // call removeFromMin, capture returned node
+       tempPtr = removeFromMin( wkgPtr -> rightChild, wkgPtr -> leftChild );
+
+       // set current node to captured node
+       // wkgPtr = tempPtr;
+       setStudentNodeData( wkgPtr, *tempPtr );
+
+       // free captured node
+       delete( tempPtr );
+     } // end checks for found data
+   }
+   // end
+   return wkgPtr;
+  }
+>>>>>>> Stashed changes
 
   void searchForStudent( string lastName, string firstName,
                                                         StudentNode* BSTRoot)
