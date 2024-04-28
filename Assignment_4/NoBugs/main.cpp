@@ -33,6 +33,7 @@ int main(int argc, char const *argv[])
 
   // (2) Write assertions in your code to check a contract
   assert( ( "Input file not found", file.is_open( ) ) );
+  Logger.LogInfo("Opened input file");
 
   // Process file
   processFileIntoBST( file, studentBST, allGrades, Logger );
@@ -56,6 +57,7 @@ int main(int argc, char const *argv[])
     // Option 1
     if ( input == "1")
     {
+      Logger.LogInfo("Generating new student...");
       // Generate info
       lastName  = randomName( lastNameVec );
       firstName = randomName( firstNameVec );
@@ -77,6 +79,7 @@ int main(int argc, char const *argv[])
       printString( gradeStr );
       printString( "%\n" );
 
+      // log student
       Logger.LogStudent( firstName, lastName, gradeStr );
     }
 
@@ -90,6 +93,9 @@ int main(int argc, char const *argv[])
       lastName  = promptForString("Last Name: ");
       firstName = promptForString("First Name: ");
 
+      // log
+      Logger.LogInfo("Searching for student: " + lastName + ", " + firstName);
+
       // search for student
       studentBST.searchForStudent( lastName, firstName );
     }
@@ -98,6 +104,7 @@ int main(int argc, char const *argv[])
     else if ( input == "3")
     {
       studentBST.displayInOrder();
+      Logger.LogInfo("Displaying tree in order.");
     }
 
     // Option 3
@@ -117,7 +124,6 @@ int main(int argc, char const *argv[])
   // end program
   return 0;
 }
-
 
 void processFileIntoBST(ifstream& file, BST& studentBST,
                                         vector <double> &allGrades,

@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named your_program
+# Target rules for targets named assignment_4
 
 # Build rule for target.
-your_program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 your_program
-.PHONY : your_program
+assignment_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment_4
+.PHONY : assignment_4
 
 # fast build rule for target.
-your_program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/build
-.PHONY : your_program/fast
+assignment_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/build
+.PHONY : assignment_4/fast
 
 #=============================================================================
 # Target rules for targets named spdlog
@@ -147,7 +147,7 @@ BSTClass.o: BSTClass.cpp.o
 
 # target to build an object file
 BSTClass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/BSTClass.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/BSTClass.cpp.o
 .PHONY : BSTClass.cpp.o
 
 BSTClass.i: BSTClass.cpp.i
@@ -155,7 +155,7 @@ BSTClass.i: BSTClass.cpp.i
 
 # target to preprocess a source file
 BSTClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/BSTClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/BSTClass.cpp.i
 .PHONY : BSTClass.cpp.i
 
 BSTClass.s: BSTClass.cpp.s
@@ -163,7 +163,7 @@ BSTClass.s: BSTClass.cpp.s
 
 # target to generate assembly for a file
 BSTClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/BSTClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/BSTClass.cpp.s
 .PHONY : BSTClass.cpp.s
 
 LogClass.o: LogClass.cpp.o
@@ -171,7 +171,7 @@ LogClass.o: LogClass.cpp.o
 
 # target to build an object file
 LogClass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/LogClass.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/LogClass.cpp.o
 .PHONY : LogClass.cpp.o
 
 LogClass.i: LogClass.cpp.i
@@ -179,7 +179,7 @@ LogClass.i: LogClass.cpp.i
 
 # target to preprocess a source file
 LogClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/LogClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/LogClass.cpp.i
 .PHONY : LogClass.cpp.i
 
 LogClass.s: LogClass.cpp.s
@@ -187,7 +187,7 @@ LogClass.s: LogClass.cpp.s
 
 # target to generate assembly for a file
 LogClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/LogClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/LogClass.cpp.s
 .PHONY : LogClass.cpp.s
 
 main.o: main.cpp.o
@@ -195,7 +195,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -203,7 +203,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -211,7 +211,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 supportingFunctions.o: supportingFunctions.cpp.o
@@ -219,7 +219,7 @@ supportingFunctions.o: supportingFunctions.cpp.o
 
 # target to build an object file
 supportingFunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/supportingFunctions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/supportingFunctions.cpp.o
 .PHONY : supportingFunctions.cpp.o
 
 supportingFunctions.i: supportingFunctions.cpp.i
@@ -227,7 +227,7 @@ supportingFunctions.i: supportingFunctions.cpp.i
 
 # target to preprocess a source file
 supportingFunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/supportingFunctions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/supportingFunctions.cpp.i
 .PHONY : supportingFunctions.cpp.i
 
 supportingFunctions.s: supportingFunctions.cpp.s
@@ -235,7 +235,7 @@ supportingFunctions.s: supportingFunctions.cpp.s
 
 # target to generate assembly for a file
 supportingFunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/supportingFunctions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/supportingFunctions.cpp.s
 .PHONY : supportingFunctions.cpp.s
 
 # Help Target
@@ -246,8 +246,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... assignment_4"
 	@echo "... spdlog"
-	@echo "... your_program"
 	@echo "... BSTClass.o"
 	@echo "... BSTClass.i"
 	@echo "... BSTClass.s"

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/bui
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/your_program.dir/all
+all: CMakeFiles/assignment_4.dir/all
 all: spdlog/all
 .PHONY : all
 
@@ -72,7 +72,7 @@ preinstall: spdlog/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/your_program.dir/clean
+clean: CMakeFiles/assignment_4.dir/clean
 clean: spdlog/clean
 .PHONY : clean
 
@@ -92,30 +92,30 @@ spdlog/clean: spdlog/CMakeFiles/spdlog.dir/clean
 .PHONY : spdlog/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/your_program.dir
+# Target rules for target CMakeFiles/assignment_4.dir
 
 # All Build rule for target.
-CMakeFiles/your_program.dir/all: spdlog/CMakeFiles/spdlog.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target your_program"
-.PHONY : CMakeFiles/your_program.dir/all
+CMakeFiles/assignment_4.dir/all: spdlog/CMakeFiles/spdlog.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target assignment_4"
+.PHONY : CMakeFiles/assignment_4.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/your_program.dir/rule: cmake_check_build_system
+CMakeFiles/assignment_4.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/build/CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/your_program.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/assignment_4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/build/CMakeFiles 0
-.PHONY : CMakeFiles/your_program.dir/rule
+.PHONY : CMakeFiles/assignment_4.dir/rule
 
 # Convenience name for target.
-your_program: CMakeFiles/your_program.dir/rule
-.PHONY : your_program
+assignment_4: CMakeFiles/assignment_4.dir/rule
+.PHONY : assignment_4
 
 # clean rule for target.
-CMakeFiles/your_program.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_program.dir/build.make CMakeFiles/your_program.dir/clean
-.PHONY : CMakeFiles/your_program.dir/clean
+CMakeFiles/assignment_4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_4.dir/build.make CMakeFiles/assignment_4.dir/clean
+.PHONY : CMakeFiles/assignment_4.dir/clean
 
 #=============================================================================
 # Target rules for target spdlog/CMakeFiles/spdlog.dir
@@ -124,7 +124,7 @@ CMakeFiles/your_program.dir/clean:
 spdlog/CMakeFiles/spdlog.dir/all:
 	$(MAKE) $(MAKESILENT) -f spdlog/CMakeFiles/spdlog.dir/build.make spdlog/CMakeFiles/spdlog.dir/depend
 	$(MAKE) $(MAKESILENT) -f spdlog/CMakeFiles/spdlog.dir/build.make spdlog/CMakeFiles/spdlog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target spdlog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13 "Built target spdlog"
 .PHONY : spdlog/CMakeFiles/spdlog.dir/all
 
 # Build rule for subdir invocation for target.

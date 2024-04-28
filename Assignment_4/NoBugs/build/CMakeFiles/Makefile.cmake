@@ -59,6 +59,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/your_program.dir/DependInfo.cmake"
+  "CMakeFiles/assignment_4.dir/DependInfo.cmake"
   "spdlog/CMakeFiles/spdlog.dir/DependInfo.cmake"
   )

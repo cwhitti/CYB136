@@ -17,7 +17,7 @@ set(SOURCE_FILES
 )
 
 # Create executable
-add_executable(your_program ${SOURCE_FILES})
+add_executable(assignment_4 ${SOURCE_FILES})
 
 # Link spdlog library
-target_link_libraries(your_program PRIVATE spdlog::spdlog)
+target_link_libraries(assignment_4 PRIVATE spdlog::spdlog)
