@@ -9,24 +9,17 @@ Log::Log( )
   file_logger->set_level(spdlog::level::debug);
 
   // Log messages
-  LogInfo("Initialized Logging");
+  file_logger->info("Logging initialized.");
 }
 
 Log::~Log()
 {
-  LogInfo("Stopped Logging");
-  spdlog::shutdown();
+  if ( outFile.is_open() )
+  {
+    outFile.close();
+  }
 }
 
-void Log::LogStudent( string firstName, string lastName, string gradeStr )
-{
-  string outStr;
-
-  outStr = "Added new student: " + lastName + ", " + firstName;
-
-  LogInfo(outStr);
-
-}
 void Log::LogInfo( string msg )
 {
   file_logger->info( msg );

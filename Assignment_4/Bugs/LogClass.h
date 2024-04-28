@@ -12,8 +12,9 @@ class Log
       // declare variables
       string fileName = "logs/logs.txt";  // Use std::string instead of string
       ofstream outFile;
+      spdlog::logger *file_logger;
 
-      Log();
+      Log( );
 
       ~Log();
 
@@ -21,10 +22,6 @@ class Log
 
       void LogError( string msg );
 
-      void LogStudent( string firstName, string lastName, string gradeStr );
-
-    private:
-      std::shared_ptr <spdlog::logger> file_logger;
 };
 
 #endif

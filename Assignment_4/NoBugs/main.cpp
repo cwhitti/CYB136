@@ -3,7 +3,8 @@
 #include "LogClass.h"
 
 void processFileIntoBST(ifstream& file, BST& studentBST,
-                                                    vector <double> &allGrades);
+                                        vector <double> &allGrades,
+                                        Log& Logger);
 
 int main(int argc, char const *argv[])
 {
@@ -16,8 +17,6 @@ int main(int argc, char const *argv[])
   ifstream file;
   double grade;
 
-  // set logger
-
   // intitialize BSTRoot
   BST studentBST;
   Log Logger;
@@ -29,7 +28,6 @@ int main(int argc, char const *argv[])
   initializeVectorFromFile( lNameFile, lastNameVec );
   initializeVectorFromFile( fNameFile, firstNameVec );
 
-
   // Open the file
   file.open(fileName);
 
@@ -37,7 +35,7 @@ int main(int argc, char const *argv[])
   assert( ( "Input file not found", file.is_open( ) ) );
 
   // Process file
-  processFileIntoBST( file, studentBST, allGrades );
+  processFileIntoBST( file, studentBST, allGrades, Logger );
 
   // file not needed now
   file.close();
@@ -78,6 +76,8 @@ int main(int argc, char const *argv[])
       printString( "\tGrade: " );
       printString( gradeStr );
       printString( "%\n" );
+
+      Logger.LogStudent( firstName, lastName, gradeStr );
     }
 
     // Option 2
@@ -120,7 +120,8 @@ int main(int argc, char const *argv[])
 
 
 void processFileIntoBST(ifstream& file, BST& studentBST,
-                                                    vector <double> &allGrades)
+                                        vector <double> &allGrades,
+                                        Log& Logger )
 {
   // declare variables
   string line, lastName, firstName, gradeStr;
@@ -151,6 +152,8 @@ void processFileIntoBST(ifstream& file, BST& studentBST,
 
       // insert to BST
       studentBST.insert( lastName, firstName, grade );
+
+      Logger.LogStudent( firstName, lastName, gradeStr );
     }
 
     // else, skip it

@@ -8,6 +8,8 @@
 #include <cassert>
 #include <random>
 #include <vector>
+#include <spdlog/spdlog.h>
+#include <spdlog/sinks/basic_file_sink.h>
 
 
 using namespace std;

@@ -863,7 +863,6 @@ CMakeFiles/your_program.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/LogClass.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/spdlog.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/common.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/null_mutex.h \
@@ -886,4 +885,5 @@ CMakeFiles/your_program.dir/main.cpp.o: \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/file_helper.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/base_sink.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/sink.h \
-  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/formatter.h
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/formatter.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/LogClass.h

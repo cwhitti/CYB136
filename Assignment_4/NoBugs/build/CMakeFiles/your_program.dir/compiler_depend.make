@@ -676,6 +676,7 @@ CMakeFiles/your_program.dir/BSTClass.cpp.o: /Users/claire/Documents/GitHub/CYB13
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/compare \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/concepts \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdint \
@@ -722,6 +723,7 @@ CMakeFiles/your_program.dir/BSTClass.cpp.o: /Users/claire/Documents/GitHub/CYB13
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/typeinfo \
@@ -864,6 +866,27 @@ CMakeFiles/your_program.dir/BSTClass.cpp.o: /Users/claire/Documents/GitHub/CYB13
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/BSTClass.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/common.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/backtracer.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/circular_q.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/file_helper.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/log_msg.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/log_msg_buffer.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/null_mutex.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/periodic_worker.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/registry.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/synchronous_factory.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/fmt/bundled/core.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/fmt/fmt.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/formatter.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/logger.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/base_sink.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/basic_file_sink.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/sink.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/spdlog.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/tweakme.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/version.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/supportingFunctions.h
 
 CMakeFiles/your_program.dir/LogClass.cpp.o: /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/LogClass.cpp \
@@ -3318,6 +3341,7 @@ CMakeFiles/your_program.dir/supportingFunctions.cpp.o: /Users/claire/Documents/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/compare \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/concepts \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdint \
@@ -3364,6 +3388,7 @@ CMakeFiles/your_program.dir/supportingFunctions.cpp.o: /Users/claire/Documents/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/typeinfo \
@@ -3505,8 +3530,31 @@ CMakeFiles/your_program.dir/supportingFunctions.cpp.o: /Users/claire/Documents/G
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/common.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/backtracer.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/circular_q.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/file_helper.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/log_msg.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/log_msg_buffer.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/null_mutex.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/periodic_worker.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/registry.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/synchronous_factory.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/fmt/bundled/core.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/fmt/fmt.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/formatter.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/logger.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/base_sink.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/basic_file_sink.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/sinks/sink.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/spdlog.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/tweakme.h \
+  /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/version.h \
   /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/supportingFunctions.h
 
+
+/Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/LogClass.h:
 
 /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/tweakme.h:
 
@@ -3541,12 +3589,6 @@ CMakeFiles/your_program.dir/supportingFunctions.cpp.o: /Users/claire/Documents/G
 /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/details/backtracer.h:
 
 /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/spdlog/include/spdlog/common.h:
-
-/Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/LogClass.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/condition_variable:
 
 /Users/claire/Documents/GitHub/CYB136/Assignment_4/NoBugs/BSTClass.h:
 
@@ -3689,6 +3731,8 @@ CMakeFiles/your_program.dir/supportingFunctions.cpp.o: /Users/claire/Documents/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/type_traits:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/tuple:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_zero.h:
 
@@ -4737,6 +4781,8 @@ CMakeFiles/your_program.dir/supportingFunctions.cpp.o: /Users/claire/Documents/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__utility/priority_tag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/condition_variable:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/search.h:
 
