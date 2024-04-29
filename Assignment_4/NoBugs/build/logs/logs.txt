@@ -1,0 +1,519 @@
+[2024-04-28 15:58:29.955] [file_logger] [info] Initialized Logging
+[2024-04-28 15:58:29.956] [file_logger] [info] Opened input file
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Smith, John
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Johnson, Emily
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Williams, Michael
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Jones, Sarah
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Brown, Christopher
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Davis, Amanda
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Miller, Matthew
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Wilson, Emma
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Moore, Andrew
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Taylor, Hannah
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Anderson, James
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Thomas, Olivia
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Jackson, Daniel
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	White, Abigail
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Harris, William
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Martin, Sophia
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Thompson, Joseph
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Garcia, Elizabeth
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Martinez, Alexander
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Robinson, Madison
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Lee, Ethan
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Nguyen, Sophie
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Wong, Brandon
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Chan, Michelle
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Gupta, Aryan
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Chen, Isabella
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Patel, Rahul
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Kim, Hannah
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Suzuki, Yuki
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Gonzalez, Diego
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Liu, Emily
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Gomes, Carlos
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Olsen, Emma
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Jensen, Lucas
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Mendoza, Andrea
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Wu, Kevin
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Ito, Ai
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Hernandez, Juan
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Park, Ji-won
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Singh, Raj
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Nguyen, Alexander
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Garcia, Sofia
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Smith, Nathan
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Kumar, Aisha
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Wilson, Aaron
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Jones, Grace
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Gonzalez, Luis
+[2024-04-28 15:58:29.957] [file_logger] [info] Added new student: 
+	Chang, Julia
+[2024-04-[2024-04-28 15:59:10.867] [file_logger] [info] Initialized Logging
+[2024-04-28 15:59:10.868] [file_logger] [info] Opened input file
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Smith, John
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Johnson, Emily
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Williams, Michael
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Jones, Sarah
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Brown, Christopher
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Davis, Amanda
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Miller, Matthew
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Wilson, Emma
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Moore, Andrew
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Taylor, Hannah
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Anderson, James
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Thomas, Olivia
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Jackson, Daniel
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	White, Abigail
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Harris, William
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Martin, Sophia
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Thompson, Joseph
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Garcia, Elizabeth
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Martinez, Alexander
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Robinson, Madison
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Lee, Ethan
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Nguyen, Sophie
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Wong, Brandon
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Chan, Michelle
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Gupta, Aryan
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Chen, Isabella
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Patel, Rahul
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Kim, Hannah
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Suzuki, Yuki
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Gonzalez, Diego
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Liu, Emily
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Gomes, Carlos
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Olsen, Emma
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Jensen, Lucas
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Mendoza, Andrea
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Wu, Kevin
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Ito, Ai
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Hernandez, Juan
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Park, Ji-won
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Singh, Raj
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Nguyen, Alexander
+[2024-04-28 15:59:10.868] [file_logger] [info] Added new student: 
+	Garcia, Sofia
+[2024-04-28 15:59:10.869] [file_logger] [info] Added new student: 
+	Smith, Nathan
+[2024-04-28 15:59:10.869] [file_logger] [info] Added new student: 
+	Kumar, Aisha
+[2024-04-28 15:59:10.869] [file_logger] [info] Added new student: 
+	Wilson, Aaron
+[2024-04-28 15:59:10.869] [file_logger] [info] Added new student: 
+	Jones, Grace
+[2024-04-28 15:59:10.869] [file_logger] [info] Added new student: 
+	Gonzalez, Luis
+[2024-04-28 15:59:10.869] [file_logger] [info] Added new student: 
+	Chang, Julia
+[2024-04-[2024-04-28 15:59:46.476] [file_logger] [info] Initialized Logging
+[2024-04-28 15:59:46.477] [file_logger] [info] Opened input file
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Smith, John
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Johnson, Emily
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Williams, Michael
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Jones, Sarah
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Brown, Christopher
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Davis, Amanda
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Miller, Matthew
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Wilson, Emma
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Moore, Andrew
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Taylor, Hannah
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Anderson, James
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Thomas, Olivia
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Jackson, Daniel
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: White, Abigail
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Harris, William
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Martin, Sophia
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Thompson, Joseph
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Garcia, Elizabeth
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Martinez, Alexander
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Robinson, Madison
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Lee, Ethan
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Nguyen, Sophie
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Wong, Brandon
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Chan, Michelle
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Gupta, Aryan
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Chen, Isabella
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Patel, Rahul
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Kim, Hannah
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Suzuki, Yuki
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Gonzalez, Diego
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Liu, Emily
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Gomes, Carlos
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Olsen, Emma
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Jensen, Lucas
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Mendoza, Andrea
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Wu, Kevin
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Ito, Ai
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Hernandez, Juan
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Park, Ji-won
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Singh, Raj
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Nguyen, Alexander
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Garcia, Sofia
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Smith, Nathan
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Kumar, Aisha
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Wilson, Aaron
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Jones, Grace
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Gonzalez, Luis
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Chang, Julia
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Martinez, Diego
+[2024-04-28 15:59:46.477] [file_logger] [info] Added new student: Brown, Charlotte
+[2024-04-28 15:59:50.864] [file_logger] [info] Generating new student...
+[2024-04-28 15:59:50.864] [file_logger] [info] Added new student: Ortiz, Alice
+[2024-04-28 15:59:51.103] [file_logger] [info] Generating new student...
+[2024-04-28 15:59:51.103] [file_logger] [info] Added new student: White, Mila
+[2024-04-28 15:59:51.344] [file_logger] [info] Generating new student...
+[2024-04-28 15:59:51.345] [file_logger] [info] Added new student: Ramos, Adam
+[2024-04-28 15:59:51.586] [file_logger] [info] Generating new student...
+[2024-04-28 15:59:51.587] [file_logger] [info] Added new student: Brown, Jonathan
+[2024-04-28 15:59:52.498] [file_logger] [info] Generating new student...
+[2024-04-28 15:59:52.498] [file_logger] [info] Added new student: Parker, Ethan
+[2024-04-28 16:00:10.065] [file_logger] [info] Searching for student: Liu, Emily
+[2024-04-28 16:00:13.206] [file_logger] [info] Stopped Logging
+[2024-04-28 16:05:30.997] [file_logger] [info] Initialized Logging
+[2024-04-28 16:05:30.999] [file_logger] [info] Opened input file
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Smith, John
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Johnson, Emily
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Williams, Michael
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Jones, Sarah
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Brown, Christopher
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Davis, Amanda
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Miller, Matthew
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Wilson, Emma
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Moore, Andrew
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Taylor, Hannah
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Anderson, James
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Thomas, Olivia
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Jackson, Daniel
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: White, Abigail
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Harris, William
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Martin, Sophia
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Thompson, Joseph
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Garcia, Elizabeth
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Martinez, Alexander
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Robinson, Madison
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Lee, Ethan
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Nguyen, Sophie
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Wong, Brandon
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Chan, Michelle
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Gupta, Aryan
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Chen, Isabella
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Patel, Rahul
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Kim, Hannah
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Suzuki, Yuki
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Gonzalez, Diego
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Liu, Emily
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Gomes, Carlos
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Olsen, Emma
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Jensen, Lucas
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Mendoza, Andrea
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Wu, Kevin
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Ito, Ai
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Hernandez, Juan
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Park, Ji-won
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Singh, Raj
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Nguyen, Alexander
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Garcia, Sofia
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Smith, Nathan
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Kumar, Aisha
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Wilson, Aaron
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Jones, Grace
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Gonzalez, Luis
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Chang, Julia
+[2024-04-28 16:05:30.999] [file_logger] [info] Added new student: Martinez, Diego
+[2024-04-28 16:05:30.99[2024-04-28 16:15:26.458] [file_logger] [info] Initialized Logging
+[2024-04-28 16:15:26.461] [file_logger] [info] Opened input file
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Smith, John
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Johnson, Emily
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Williams, Michael
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Jones, Sarah
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Brown, Christopher
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Davis, Amanda
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Miller, Matthew
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Wilson, Emma
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Moore, Andrew
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Taylor, Hannah
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Anderson, James
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Thomas, Olivia
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Jackson, Daniel
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: White, Abigail
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Harris, William
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Martin, Sophia
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Thompson, Joseph
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Garcia, Elizabeth
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Martinez, Alexander
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Robinson, Madison
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Lee, Ethan
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Nguyen, Sophie
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Wong, Brandon
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Chan, Michelle
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Gupta, Aryan
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Chen, Isabella
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Patel, Rahul
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Kim, Hannah
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Suzuki, Yuki
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Gonzalez, Diego
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Liu, Emily
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Gomes, Carlos
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Olsen, Emma
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Jensen, Lucas
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Mendoza, Andrea
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Wu, Kevin
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Ito, Ai
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Hernandez, Juan
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Park, Ji-won
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Singh, Raj
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Nguyen, Alexander
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Garcia, Sofia
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Smith, Nathan
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Kumar, Aisha
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Wilson, Aaron
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Jones, Grace
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Gonzalez, Luis
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Chang, Julia
+[2024-04-28 16:15:26.461] [file_logger] [info] Added new student: Martinez, Diego
+[2024-04-28 16:15:26.46[2024-04-28 19:11:39.256] [file_logger] [info] Initialized Logging
+[2024-04-28 19:11:39.257] [file_logger] [info] Opened input file
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Smith, John
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Johnson, Emily
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Williams, Michael
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Jones, Sarah
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Brown, Christopher
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Davis, Amanda
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Miller, Matthew
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Wilson, Emma
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Moore, Andrew
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Taylor, Hannah
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Anderson, James
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Thomas, Olivia
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Jackson, Daniel
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: White, Abigail
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Harris, William
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Martin, Sophia
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Thompson, Joseph
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Garcia, Elizabeth
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Martinez, Alexander
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Robinson, Madison
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Lee, Ethan
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Nguyen, Sophie
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Wong, Brandon
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Chan, Michelle
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Gupta, Aryan
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Chen, Isabella
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Patel, Rahul
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Kim, Hannah
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Suzuki, Yuki
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Gonzalez, Diego
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Liu, Emily
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Gomes, Carlos
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Olsen, Emma
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Jensen, Lucas
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Mendoza, Andrea
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Wu, Kevin
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Ito, Ai
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Hernandez, Juan
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Park, Ji-won
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Singh, Raj
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Nguyen, Alexander
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Garcia, Sofia
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Smith, Nathan
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Kumar, Aisha
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Wilson, Aaron
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Jones, Grace
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Gonzalez, Luis
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Chang, Julia
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Martinez, Diego
+[2024-04-28 19:11:39.257] [file_logger] [info] Added new student: Brown, Charlotte
+[2024-04-28 19:11:40.674] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:40.677] [file_logger] [info] Added new student: Rivera, David
+[2024-04-28 19:11:40.965] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:40.970] [file_logger] [info] Added new student: Scott, John
+[2024-04-28 19:11:41.155] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:41.161] [file_logger] [info] Added new student: Stewart, Xavier
+[2024-04-28 19:11:41.647] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:41.654] [file_logger] [info] Added new student: Gonzalez, Ava
+[2024-04-28 19:11:41.922] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:41.930] [file_logger] [info] Added new student: Chavez, Luke
+[2024-04-28 19:11:42.321] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:42.330] [file_logger] [info] Added new student: Sanders, Layla
+[2024-04-28 19:11:42.631] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:42.641] [file_logger] [info] Added new student: Chavez, Logan
+[2024-04-28 19:11:43.634] [file_logger] [info] Generating new student...
+[2024-04-28 19:11:43.647] [file_logger] [info] Added new student: Ward, Adam
+[2024-04-28 19:11:46.370] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:11:48.779] [file_logger] [info] Stopped Logging
+[2024-04-28 19:24:52.014] [file_logger] [info] Initialized Logging
+[2024-04-28 19:24:52.016] [file_logger] [info] Opened input file
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Smith, John
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Johnson, Emily
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Williams, Michael
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Jones, Sarah
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Brown, Christopher
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Davis, Amanda
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Miller, Matthew
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Wilson, Emma
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Moore, Andrew
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Taylor, Hannah
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Anderson, James
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Thomas, Olivia
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Jackson, Daniel
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: White, Abigail
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Harris, William
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Martin, Sophia
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Thompson, Joseph
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Garcia, Elizabeth
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Martinez, Alexander
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Robinson, Madison
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Lee, Ethan
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Nguyen, Sophie
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Wong, Brandon
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Chan, Michelle
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Gupta, Aryan
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Chen, Isabella
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Patel, Rahul
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Kim, Hannah
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Suzuki, Yuki
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Gonzalez, Diego
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Liu, Emily
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Gomes, Carlos
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Olsen, Emma
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Jensen, Lucas
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Mendoza, Andrea
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Wu, Kevin
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Ito, Ai
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Hernandez, Juan
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Park, Ji-won
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Singh, Raj
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Nguyen, Alexander
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Garcia, Sofia
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Smith, Nathan
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Kumar, Aisha
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Wilson, Aaron
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Jones, Grace
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Gonzalez, Luis
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Chang, Julia
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Martinez, Diego
+[2024-04-28 19:24:52.016] [file_logger] [info] Added new student: Brown, Charlotte
+[2024-04-28 19:24:53.219] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:53.221] [file_logger] [info] Added new student: Robinson, Henry
+[2024-04-28 19:24:53.429] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:53.431] [file_logger] [info] Added new student: Rivera, James
+[2024-04-28 19:24:53.663] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:53.668] [file_logger] [info] Added new student: Murphy, David
+[2024-04-28 19:24:53.913] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:53.919] [file_logger] [info] Added new student: Hall, Sofia
+[2024-04-28 19:24:54.185] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:54.190] [file_logger] [info] Added new student: Scott, David
+[2024-04-28 19:24:54.445] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:54.453] [file_logger] [info] Added new student: Davis, Alice
+[2024-04-28 19:24:54.677] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:54.687] [file_logger] [info] Added new student: Anderson, Daniel
+[2024-04-28 19:24:54.895] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:54.906] [file_logger] [info] Added new student: James, Hazel
+[2024-04-28 19:24:55.126] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:55.139] [file_logger] [info] Added new student: Campbell, Lucy
+[2024-04-28 19:24:55.369] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:55.383] [file_logger] [info] Added new student: Green, Ava
+[2024-04-28 19:24:55.627] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:55.642] [file_logger] [info] Added new student: Cox, Ryan
+[2024-04-28 19:24:55.863] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:55.878] [file_logger] [info] Added new student: Lewis, Sebastian
+[2024-04-28 19:24:56.113] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:56.130] [file_logger] [info] Added new student: Cruz, Mason
+[2024-04-28 19:24:56.784] [file_logger] [info] Generating new student...
+[2024-04-28 19:24:56.801] [file_logger] [info] Added new student: Turner, Ryan
+[2024-04-28 19:24:58.136] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:24:58.379] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:24:58.612] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:24:58.826] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:24:59.063] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:24:59.619] [file_logger] [info] Displaying tree in order.
+[2024-04-28 19:25:01.736] [file_logger] [info] Stopped Logging

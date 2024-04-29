@@ -5,6 +5,17 @@
 
 using namespace std;
 
+/*
+Name: Claire Whittington
+Class: CYB136
+Task: Assignment #3
+
+This program works as a Binary Search Tree demonstation. This program
+takes a CSV as a command line argument and puts all of the information
+into a BST by class grade. The user can add more information, display
+the information, or search for a student.
+*/
+
 // declare BST class
 class BST;
 
@@ -233,9 +244,134 @@ private:
     }
   }
 
+  StudentNode *removeFromMin( StudentNode *parentPtr, StudentNode *childPtr )
+  {
+   // check if another layer of recursion is needed
+   if ( childPtr -> leftChild != NULL )
+   {
+    // recursively searches for min node
+    return removeFromMin( childPtr, childPtr -> leftChild );
+   }
+
+   // no more recursion is needed
+
+   // Update the parent's leftChildPtr to unlink the min node
+   parentPtr -> leftChild = childPtr -> rightChild;
+
+   // return child pointer
+   return childPtr;
+  }
+
+  bool removeItem( string firstName, string lastName, StudentNode *BSTRoot )
+  {
+    // searches for item
+    StudentNode *foundData = search( lastName, firstName, BSTRoot );
+
+    // ensure data is found
+    if (foundData != NULL)
+    {
+     // if found, creates new node from search pointer,
+     // setStateNodeData( removedData, *foundData );
+
+     // then removes item from tree using helper function,
+      // function: StateDataType *wkgPtr, const StateDataType outData
+     BSTRoot = removeItemHelper( BSTRoot, foundData );
+
+     return true;
+    }
+    // otherwise returns NULL
+    return false;
+  }
+
+  StudentNode* removeItemHelper( StudentNode *wkgPtr, StudentNode *foundNode )
+  {
+   // declare variables
+   StudentNode *tempPtr;
+   float difference;
+
+   // compare state names
+    difference = foundNode -> grade - wkgPtr -> grade;
+
+   // check for moving left
+   if (difference < 0 )
+   {
+    // recurse left
+    wkgPtr->leftChild = removeItemHelper( wkgPtr->leftChild, foundNode );
+   }
+
+   // check for moving right
+   else if (difference > 0)
+   {
+    // recurse right
+    wkgPtr->rightChild = removeItemHelper( wkgPtr->rightChild, foundNode );
+   }
+
+   // we found the node to remove!!
+   else
+   {
+     // CASE: check for left child null
+     if ( wkgPtr->leftChild == NULL )
+     {
+      // set a temp ptr to wkgPtr
+      tempPtr = wkgPtr;
+
+      // set return ptr to right child
+      wkgPtr = wkgPtr -> rightChild;
+
+      // free temp ptr
+      delete ( tempPtr );
+     }
+
+     // otherwise, check for right child null
+     else if ( wkgPtr -> rightChild == NULL )
+     {
+      // set a temp ptr to wkg ptr
+      tempPtr = wkgPtr;
+
+      // set return ptr to left child
+      wkgPtr = wkgPtr -> leftChild;
+
+      // free temp ptr
+      delete ( tempPtr );
+     }
+
+     // check for right child has no left child
+     else if ( wkgPtr -> rightChild -> leftChild == NULL)
+     {
+      // copy data from right child into current node
+      // wkgPtr = wkgPtr -> rightChild;
+      setStudentNodeData( wkgPtr, *wkgPtr -> rightChild );
+
+      // set temp ptr to right child
+      tempPtr = wkgPtr -> rightChild;
+
+      // link around the right child
+      wkgPtr -> rightChild = tempPtr -> rightChild;
+
+      // free the right child node
+      delete ( tempPtr );
+     }
+
+     // assume right child has left child
+     else
+     {
+       // call removeFromMin, capture returned node
+       tempPtr = removeFromMin( wkgPtr -> rightChild, wkgPtr -> leftChild );
+
+       // set current node to captured node
+       // wkgPtr = tempPtr;
+       setStudentNodeData( wkgPtr, *tempPtr );
+
+       // free captured node
+       delete( tempPtr );
+     } // end checks for found data
+   }
+   // end
+   return wkgPtr;
+  }
 
   void searchForStudent( string lastName, string firstName,
-                                                        StudentNode* BSTRoot)
+                                                          StudentNode* BSTRoot)
   {
     // declare variables
     StudentNode* foundNode = NULL;
@@ -244,7 +380,7 @@ private:
     // check if root is NULL
     if (BSTRoot != NULL)
     {
-      // find find node
+      // find node
       foundNode = search( lastName, firstName, BSTRoot );
 
       // was the node found?
@@ -266,7 +402,7 @@ private:
     }
   }
 
-  StudentNode* search(string lastName, string firstName, StudentNode* node)
+  StudentNode* search( string lastName, string firstName, StudentNode* node )
   {
     // No node found
     if (node == NULL)
@@ -291,6 +427,16 @@ private:
 
     // Recursively search in the right subtree
     return search(lastName, firstName, node->rightChild);
+  }
+
+  void setStudentNodeData( StudentNode *destPtr, const StudentNode source )
+  {
+   destPtr -> lastName = source.lastName;
+   destPtr -> firstName = source.firstName;
+   destPtr -> grade = source.grade;
+
+   destPtr -> leftChild = source.leftChild;
+   destPtr -> rightChild = source.rightChild;
   }
 
 public:
@@ -343,6 +489,18 @@ public:
     // process Pre order
     cout << "\n---- Displaying Students Pre Order ----\n\n";
     privateDisplayPreOrder( BSTRoot, &index );
+  }
+
+  void removeItem( string lastName, string firstName)
+  {
+    if ( removeItem( firstName, lastName, BSTRoot ) )
+    {
+      printString("\n---- Item removed! ----\n");
+    }
+    else
+    {
+      printString("\n----Item not removed----\n");
+    }
   }
 
   // search in BST
@@ -433,8 +591,17 @@ int main(int argc, char const *argv[])
           studentBST.displayInOrder();
         }
 
-        // Option 4
-        else if ( input == "4" )
+        // Option 3
+        else if ( input == "4")
+        {
+          lastName = promptForString("Last Name: ");
+          firstName = promptForString("First Name: ");
+
+          studentBST.removeItem( lastName, firstName );
+        }
+
+        // Option 5
+        else if ( input == "5" )
         {
           run = false;
         }
@@ -471,7 +638,8 @@ void displayMenu()
   printString("[1] Add New Student\n");
   printString("[2] Search Existing Student\n");
   printString("[3] Display BST In Order\n");
-  printString("[4] Quit\n\n");
+  printString("[4] Remove Student\n");
+  printString("[5] Quit\n\n");
 }
 
 void printString( string str )
